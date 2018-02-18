@@ -1,10 +1,11 @@
-LUA     = lua-5.1.4
+#LUA     = lua-5.1.4
 #LUA     = lua-5.2.0
+LUA     = lua-5.3.x
 STATIC  = false
 OPENSSL = /home/user/src/openssl-0.9.8e
 
-CFLAGS  = -fno-exceptions -fno-rtti -O2 -I$(LUA) -L$(LUA)
-CFLAGS+= -I$(OPENSSL)/include -L$(OPENSSL)/lib/openwrt
+CFLAGS  += -Os -fno-exceptions -fno-rtti -I$(LUA) -L$(LUA) -I$(ROOTDIR)/lib/headers/include -DLUA_COMPAT_APIINTCASTS
+CFLAGS  += -I$(OPENSSL)/include -L$(OPENSSL)/lib/openwrt
 SRC     = main.cpp soap.cpp mem.cpp mcast.cpp luaxlib.cpp luaxcore.cpp luajson.cpp luajson_parser.cpp
 LUAMYCFLAGS = -DLUA_USE_LINUX
 

@@ -10,11 +10,11 @@
 
 #ifdef __cplusplus 
 extern "C" {
-#endif /*__cplusplus*/ 
+#endif /*__cplusplus*/
 
-#include <lua.h>  
-#include <lauxlib.h>  
-#include <lualib.h>  
+#include <lua.h>
+#include <lauxlib.h>
+#include <lualib.h>
 
 int luaopen_luajson(lua_State* L);
 
