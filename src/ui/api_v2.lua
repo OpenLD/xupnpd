@@ -55,9 +55,9 @@ function ui_api_v_2_call(args,data,ip,url,methtod)
 
     if res then
         http_send_headers(200,'json')
-	      http.send(json.encode(res))
+        http.send(json.encode(res))
     else
         http_send_headers(404)
-        	http.send(json.encode(url))
+        http.send(json.encode(url))
     end
 end
