@@ -7,7 +7,7 @@
 profiles['Skeleton']=
 {
     -- comment this for enable
-    ['disabled']=true,
+    -- ['disabled']=true,
 
     -- device description
     ['desc']='Skeleton for example',
@@ -31,7 +31,7 @@ profiles['Skeleton']=
         ['upnp_albumart']=0,                                    -- 0: <upnp:albumArtURI>direct url</upnp:albumArtURI>, 1: <res>direct url<res>, 2: <upnp:albumArtURI>local url</upnp:
         ['dlna_headers']=true,                                  -- send TransferMode.DLNA.ORG and ContentFeatures.DLNA.ORG in HTTP response
         ['dlna_extras']=true,                                   -- DLNA extras in headers and SOAP
-        ['cfg.content_disp']=true,                             -- send Content-Disposition when streaming
+        ['cfg.content_disp']=false,                             -- send Content-Disposition when streaming
         ['soap_length']=true,                                   -- send Content-Length in SOAP response
         ['cfg.wdtv']=true,                                     -- WDTV Live compatible mode
         ['cfg.sec_extras']=true                                -- Samsung extras
@@ -64,7 +64,6 @@ profiles['Skeleton']=
         ['mp3']    = { upnp_type.audio, upnp_class.audio, 'audio/mpeg',      upnp_proto.mp3,   dlna_org_extras.mp3 },
         ['ogg']    = { upnp_type.audio, upnp_class.audio, 'application/ogg', upnp_proto.ogg,   dlna_org_extras.none },
         ['wma']    = { upnp_type.audio, upnp_class.audio, 'audio/x-ms-wma',  upnp_proto.wma,   dlna_org_extras.wma_full }
-}
 --      ...
     }
 }

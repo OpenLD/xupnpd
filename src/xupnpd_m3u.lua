@@ -202,7 +202,7 @@ function find_playlist_object(s)
         if not pls then
             if string.find(i,'^%d+$') then pls=playlist_data else return nil end
         else
-            if not pls.elements then return nil end            
+            if not pls.elements then return nil end
             pls=pls.elements[tonumber(i)]
         end
     end

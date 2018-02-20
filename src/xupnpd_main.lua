@@ -53,8 +53,8 @@ cfg.dlna_headers=true                   -- send TransferMode.DLNA.ORG and Conten
 cfg.dlna_extras=true                    -- DLNA extras in headers and SOAP
 cfg.content_disp=false                  -- send Content-Disposition when streaming
 cfg.soap_length=true                    -- send Content-Length in SOAP response
-cfg.wdtv=false                          -- WDTV Live compatible mode
-cfg.sec_extras=false                    -- Samsung extras
+cfg.wdtv=true                           -- WDTV Live compatible mode
+cfg.sec_extras=true                     -- Samsung extras
 
 
 update_id=1             -- system update_id
@@ -81,6 +81,8 @@ if cfg.profiles then load_plugins(cfg.profiles,'profile') end
 dofile('xupnpd_m3u.lua')
 dofile('xupnpd_ssdp.lua')
 dofile('xupnpd_http.lua')
+dofile('xupnpd_soap.lua')
+dofile('xupnpd_webapp.lua')
 
 -- download feeds from external sources (child process)
 function update_feeds_async()

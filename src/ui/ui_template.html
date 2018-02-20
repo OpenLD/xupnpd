@@ -49,7 +49,7 @@
             </div>
             <!-- /.navbar-header -->
 
-            <ul class="nav navbar-top-links navbar-right">
+            <!-- /<ul class="nav navbar-top-links navbar-right">
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                         <i class="fa fa-envelope fa-fw"></i>  <i class="fa fa-caret-down"></i>
@@ -97,11 +97,11 @@
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         </li>
-                    </ul>
+                    </ul> -->
                     <!-- /.dropdown-messages -->
-                </li>
+                <!-- /</li> -->
                 <!-- /.dropdown -->
-                <li class="dropdown">
+                <!-- /<li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                         <i class="fa fa-tasks fa-fw"></i>  <i class="fa fa-caret-down"></i>
                     </a>
@@ -176,11 +176,11 @@
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         </li>
-                    </ul>
+                    </ul> -->
                     <!-- /.dropdown-tasks -->
-                </li>
+                <!-- /</li> -->
                 <!-- /.dropdown -->
-                <li class="dropdown">
+                <!-- /<li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                         <i class="fa fa-bell fa-fw"></i>  <i class="fa fa-caret-down"></i>
                     </a>
@@ -238,9 +238,9 @@
                         </li>
                     </ul>
                     <!-- /.dropdown-alerts -->
-                </li>
+                <!-- /</li> -->
                 <!-- /.dropdown -->
-                <li class="dropdown">
+                <!-- /<li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                         <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
                     </a>
@@ -254,9 +254,9 @@
                         </li>
                     </ul>
                     <!-- /.dropdown-user -->
-                </li>
+                <!-- /</li> -->
                 <!-- /.dropdown -->
-            </ul>
+            <!-- /</ul> -->
             <!-- /.navbar-top-links -->
 
             <div class="navbar-default sidebar" role="navigation">
@@ -294,17 +294,17 @@
                         <li>
                             <a href="feeds"><i class="fa fa-edit fa-fw"></i> Feeds</a>
                         </li>
-						<li>
+                        <li>
                             <a href="downloads"><i class="fa "></i> Downloads</a>
                         </li>
-						<li>
+                        <li>
                             <a href="config"><i class="fa fa-edit fa-fw"></i> Config</a>
                         </li>
-						<li>
+                        <li>
                             <a href="status"><i class="fa"></i> Status</a>
                         </li>
-						<li>
-                            <a href="/app"><i class="fa "></i> HTML5</a>
+                        <li>
+                            <a href="/app"><i class="fa "></i> APP</a>
                         </li>
                     </ul>
                 </div>
@@ -320,7 +320,7 @@
                     <!--<div class="col-lg-12">
                         <h1 class="page-header">Blank</h1>
                     </div>-->
-					${content}
+                    ${content}
                     <!-- /.col-lg-12 -->
                 </div>
                 <!-- /.row -->
@@ -342,6 +342,8 @@
             WWW Port: <%- port %><br/>
             Model: <a href=<%- url %>><%- name %>-<%-version %></a><br/>
             Manufacturer: <%= manufacturer %><br/>
+            Build for: OpenLD <br/>
+            Source Code: <a href="https://github.com/OpenLD/xupnpd">Xupnpd Unofficial</a><br/>
             <i><%- description %></i><br/><br/>
         </div>
     </script>
@@ -426,16 +428,16 @@
     <!-- Custom Theme JavaScript -->
     <script src="js/sb-admin-2.js"></script>
 
-	<!-- underscore -->
+    <!-- underscore -->
     <script src="js/underscore.js"></script>
-	<!-- backbone -->
+    <!-- backbone -->
     <script src="js/backbone.js"></script>
-	<!-- backbone.babysitter -->
+    <!-- backbone.babysitter -->
     <script src="js/backbone.babysitter.js"></script>
 
-	<!-- backbone.babysitter -->
+    <!-- backbone.babysitter -->
     <script src="js/backbone.marionette.min.js"></script>
-	<script src="js/backbone.wreqr.js"></script>
+    <script src="js/backbone.wreqr.js"></script>
 
     <script src="js/override/Backbone.Marionette.CompositeView.prototype.attachElContent.js"></script>
     <script src="js/override/Backbone.Marionette.ItemView.prototype.attachElContent.js"></script>
@@ -443,13 +445,11 @@
 
     <script src="js/app/app.js"></script>
 
-
     <script src="js/app/Status/Status.route.js"></script>
 
-
-  <script src="js/app/PlayList/PlayList.model.js"></script>
-  <script src="js/app/PlayList/PlayList.collection.js"></script>
-  <script src="js/app/PlayList/PlayList.view.js"></script>
+    <script src="js/app/PlayList/PlayList.model.js"></script>
+    <script src="js/app/PlayList/PlayList.collection.js"></script>
+    <script src="js/app/PlayList/PlayList.view.js"></script>
     <script src="js/app/PlayList/PlayList.route.js"></script>
 
 
